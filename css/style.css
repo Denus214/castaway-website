@@ -1,0 +1,105 @@
+/* dm-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dm-sans-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+html {
+      box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #191919;
+}
+
+.page-wrapper {
+    margin: 0 70px;
+}
+
+/* header style start */
+
+.header__wrapper {
+    margin: 26px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__list {
+    list-style: none;
+    display: flex;
+}
+
+.header__item {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 20px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 27px;
+    color: white;
+}
+
+.header__link-home {
+    color: #118DA8;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: 0.7;
+}
+/* header style end */
+
+.intro__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+}
+
+.intro__title {
+    font-size: 70px;
+    line-height: 88px;
+    color: #FFFFFF;
+    letter-spacing: 3.2px;
+}
+
+.intro__title-underlined {
+    font-size: 75px;
+    background: url(/img/svg/curved-underline.svg) no-repeat bottom left;
+    
+}
+
+.intro-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__title-bold {
+    font-size: 80px;
+    font-weight: 700;
+}
